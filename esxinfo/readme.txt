@@ -1,45 +1,44 @@
-¡‘O’ñ
-PowerShell2.0‚ªƒCƒ“ƒXƒg[ƒ‹‚³‚ê‚Ä‚¢‚é‚±‚Æ
-PowerCLI5.5‚ªƒCƒ“ƒXƒg[ƒ‹‚³‚ê‚Ä‚¢‚é‚±‚Æ
+â– å‰æ
+PowerShell2.0ãŒã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã•ã‚Œã¦ã„ã‚‹ã“ã¨
+PowerCLI5.5ãŒã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã•ã‚Œã¦ã„ã‚‹ã“ã¨
 
-¡Žg‚¢•û
- ƒXƒNƒŠƒvƒg‚ÌŽÀs•û–@
-PowerShell‚ð‹N“®ŒãAŠY“–ƒXƒNƒŠƒvƒg‚ðŽÀs
-\\jrid0116\vm\JRID0118_‹Œ¬â’[––\nomura\VMWARE\VMƒŠƒ\[ƒX\ESXî•ñŽæ“¾ƒXƒNƒŠƒvƒg\esxinfo.ps1
+â– ä½¿ã„æ–¹
+â–¡ã‚¹ã‚¯ãƒªãƒ—ãƒˆã®å®Ÿè¡Œæ–¹æ³•
+PowerShellã‚’èµ·å‹•å¾Œã€è©²å½“ã‚¹ã‚¯ãƒªãƒ—ãƒˆã‚’å®Ÿè¡Œ
 
-¦
-ŽÀsƒ|ƒŠƒV[‚ð•ÏX‚µ‚Ä‚¢‚È‚¢ê‡‚ÍA‰º‹LƒRƒ}ƒ“ƒh‚ÅƒXƒNƒŠƒvƒgŽÀs‚ð‹–‰Â‚·‚é
+â€»
+å®Ÿè¡Œãƒãƒªã‚·ãƒ¼ã‚’å¤‰æ›´ã—ã¦ã„ãªã„å ´åˆã¯ã€ä¸‹è¨˜ã‚³ãƒžãƒ³ãƒ‰ã§ã‚¹ã‚¯ãƒªãƒ—ãƒˆå®Ÿè¡Œã‚’è¨±å¯ã™ã‚‹
 
-ŽÀsƒ|ƒŠƒV[‚ð•ÏX‚·‚é(M—Š‚³‚ê‚Ä‚¢‚È‚¢ƒXƒNƒŠƒvƒgŽÀs‚ð‹–‰Â)
+å®Ÿè¡Œãƒãƒªã‚·ãƒ¼ã‚’å¤‰æ›´ã™ã‚‹(ä¿¡é ¼ã•ã‚Œã¦ã„ãªã„ã‚¹ã‚¯ãƒªãƒ—ãƒˆå®Ÿè¡Œã‚’è¨±å¯)
 Set-ExecutionPolicy RemoteSigned
 
- ESX‚ðV‹K\’z‚µ‚½ê‡
-listƒtƒHƒ‹ƒ_“à‚Ìesxlist.csv‚ÉƒzƒXƒg–¼AIPƒAƒhƒŒƒX‚ð’Ç‹L‚·‚é
-‚±‚Ìì‹Æ‚É‚æ‚èAƒXƒNƒŠƒvƒg‚Ì‘ÎÛ‚Æ‚È‚è‚Ü‚·B
+â–¡ESXã‚’æ–°è¦æ§‹ç¯‰ã—ãŸå ´åˆ
+listãƒ•ã‚©ãƒ«ãƒ€å†…ã®esxlist.csvã«ãƒ›ã‚¹ãƒˆåã€IPã‚¢ãƒ‰ãƒ¬ã‚¹ã‚’è¿½è¨˜ã™ã‚‹
+ã“ã®ä½œæ¥­ã«ã‚ˆã‚Šã€ã‚¹ã‚¯ãƒªãƒ—ãƒˆã®å¯¾è±¡ã¨ãªã‚Šã¾ã™ã€‚
 
-¡‚»‚Ì‚Ù‚©
- ƒXƒNƒŠƒvƒgƒƒO
-ƒXƒNƒŠƒvƒgƒƒO‚ÍAlogƒtƒHƒ‹ƒ_‚Éo—Í‚³‚ê‚Ä‚¢‚é
+â– ãã®ã»ã‹
+â–¡ã‚¹ã‚¯ãƒªãƒ—ãƒˆãƒ­ã‚°
+ã‚¹ã‚¯ãƒªãƒ—ãƒˆãƒ­ã‚°ã¯ã€logãƒ•ã‚©ãƒ«ãƒ€ã«å‡ºåŠ›ã•ã‚Œã¦ã„ã‚‹
 
- ”FØî•ñ
-”FØî•ñ(ƒAƒJƒEƒ“ƒgAƒpƒXƒ[ƒh)‚ªsecureƒtƒHƒ‹ƒ_‚ÉˆÃ†‰»‚³‚ê‚Ä”z’u‚³‚ê‚Ä‚¢‚é
+â–¡èªè¨¼æƒ…å ±
+èªè¨¼æƒ…å ±(ã‚¢ã‚«ã‚¦ãƒ³ãƒˆã€ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰)ãŒsecureãƒ•ã‚©ãƒ«ãƒ€ã«æš—å·åŒ–ã•ã‚Œã¦é…ç½®ã•ã‚Œã¦ã„ã‚‹
 
- ‘¼ƒXƒNƒŠƒvƒg‚Ö‚Ì‰ž—p
-foreach($ESX in $ESXHosts)‚ÅŽn‚Ü‚éƒ‹[ƒvˆ—‚Ì’†‚ÅA
-ŽÀÛ‚ÉPowerCLIƒRƒ}ƒ“ƒh‚ðŽÀs‚µ‚Ä‚¢‚Ü‚·B
-‚»‚Ì‚½‚ßAESX‚É‚³‚¹‚½‚¢ˆ—(î•ñŽæ“¾AÝ’è•ÏX‚È‚Ç)‚ð‚±‚Ìƒ‹[ƒv“à‚É‹LÚ‚·‚ê‚ÎA
-ŠeESX‚É‘Î‚µ‚ÄA“¯‚¶ˆ—‚ð‚³‚¹‚é‚±‚Æ‚ª‚Å‚«‚Ü‚·B
+â–¡ä»–ã‚¹ã‚¯ãƒªãƒ—ãƒˆã¸ã®å¿œç”¨
+foreach($ESX in $ESXHosts)ã§å§‹ã¾ã‚‹ãƒ«ãƒ¼ãƒ—å‡¦ç†ã®ä¸­ã§ã€
+å®Ÿéš›ã«PowerCLIã‚³ãƒžãƒ³ãƒ‰ã‚’å®Ÿè¡Œã—ã¦ã„ã¾ã™ã€‚
+ãã®ãŸã‚ã€ESXã«ã•ã›ãŸã„å‡¦ç†(æƒ…å ±å–å¾—ã€è¨­å®šå¤‰æ›´ãªã©)ã‚’ã“ã®ãƒ«ãƒ¼ãƒ—å†…ã«è¨˜è¼‰ã™ã‚Œã°ã€
+å„ESXã«å¯¾ã—ã¦ã€åŒã˜å‡¦ç†ã‚’ã•ã›ã‚‹ã“ã¨ãŒã§ãã¾ã™ã€‚
 
-PowerCLIƒRƒ}ƒ“ƒh‚âvSphere API‚ðŽg—p‰Â”\
+PowerCLIã‚³ãƒžãƒ³ãƒ‰ã‚„vSphere APIã‚’ä½¿ç”¨å¯èƒ½
 
- ƒpƒXƒ[ƒh•ÏXŽž‚Ì‘Î‰ž
-ESX‚ÌrootƒpƒXƒ[ƒh‚ð•ÏX‚µ‚½Û‚É•K—v‚Æ‚È‚è‚Ü‚·B
-ã‹L‚ÌÛ‚É‚ÍAƒXƒNƒŠƒvƒg‚ÅŽg—p‚·‚éƒpƒXƒ[ƒhƒtƒ@ƒCƒ‹‚ðV‚µ‚¢ƒpƒXƒ[ƒh‚Åì¬‚·‚é•K—v‚ª‚ ‚è‚Ü‚·B
+â–¡ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰å¤‰æ›´æ™‚ã®å¯¾å¿œ
+ESXã®rootãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å¤‰æ›´ã—ãŸéš›ã«å¿…è¦ã¨ãªã‚Šã¾ã™ã€‚
+ä¸Šè¨˜ã®éš›ã«ã¯ã€ã‚¹ã‚¯ãƒªãƒ—ãƒˆã§ä½¿ç”¨ã™ã‚‹ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãƒ•ã‚¡ã‚¤ãƒ«ã‚’æ–°ã—ã„ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã§ä½œæˆã™ã‚‹å¿…è¦ãŒã‚ã‚Šã¾ã™ã€‚
 read-host -assecurestring | convertfrom-securestring | out-file C:\securepassword.dat
-<VƒpƒXƒ[ƒh‚ð“ü—Í‚µ‚ÄAƒGƒ“ƒ^[ƒL[>
+<æ–°ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ã‚’å…¥åŠ›ã—ã¦ã€ã‚¨ãƒ³ã‚¿ãƒ¼ã‚­ãƒ¼>
 
-ì¬‚µ‚½VƒpƒXƒ[ƒhƒtƒ@ƒCƒ‹(C:\securepassword.dat)‚ðƒXƒNƒŠƒvƒgƒtƒHƒ‹ƒ_“à‚Ì
-secureƒtƒHƒ‹ƒ_‚ÉƒRƒs[‚µ‚Ü‚·B
+ä½œæˆã—ãŸæ–°ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãƒ•ã‚¡ã‚¤ãƒ«(C:\securepassword.dat)ã‚’ã‚¹ã‚¯ãƒªãƒ—ãƒˆãƒ•ã‚©ãƒ«ãƒ€å†…ã®
+secureãƒ•ã‚©ãƒ«ãƒ€ã«ã‚³ãƒ”ãƒ¼ã—ã¾ã™ã€‚
 
-¦
-ƒpƒXƒ[ƒhƒtƒ@ƒCƒ‹(securepassword.dat)‚Ìƒtƒ@ƒCƒ‹–¼‚â’†g‚Í•ÏX‚µ‚È‚¢‚±‚ÆB
+â€»
+ãƒ‘ã‚¹ãƒ¯ãƒ¼ãƒ‰ãƒ•ã‚¡ã‚¤ãƒ«(securepassword.dat)ã®ãƒ•ã‚¡ã‚¤ãƒ«åã‚„ä¸­èº«ã¯å¤‰æ›´ã—ãªã„ã“ã¨ã€‚
